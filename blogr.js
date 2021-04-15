@@ -29,66 +29,110 @@ let conArrow =  document.querySelector(".con-arrow");
     
 //   })(document);
 
-function resetMenu(){
-    company.style.display = "none";
-    connect.style.display = "none";
-    product.style.display = "none";
+// function resetMenu(){
+//     company.style.display = "none";
+//     connect.style.display = "none";
+//     product.style.display = "none";
 
-    pArrow.style.transform= "none";  
-    cArrow.style.transform= "none";  
-    conArrow.style.transform= "none";  
-  }
+//     pArrow.style.transform= "none";  
+//     cArrow.style.transform= "none";  
+//     conArrow.style.transform= "none";  
+//   }
 
-burger.addEventListener("mouseup", function(){
-    burger.style.display="none";
-    herO.style.display="none";
-    menue.style.display="block";
-})
+// burger.addEventListener("mouseup", function(){
+//     burger.style.display="none";
+//     herO.style.display="none";
+//     menue.style.display="block";
+// })
 
-document.querySelector(".site-title").addEventListener("mouseup", function(){
-    burger.style.display="block";
-    menue.style.display="none";
-    herO.style.display="block";
+// document.querySelector(".site-title").addEventListener("mouseup", function(){
+//     burger.style.display="block";
+//     menue.style.display="none";
+//     herO.style.display="block";
 
-    resetMenu()
-})
+//     resetMenu()
+// })
+
+//for onhoverEvent
+
+pArrow.addEventListener('mouseover', function(){
+    // console.log('clicked');
+    if(menue.style.display !== 'block'){
+        menue.style.display= 'block';
+        pArrow.style.transform = 'rotate(180deg)';
+       
+    }else {
+        
+            menue.style.display = "none";
+            pArrow.style.transform = 'rotate(0deg)';
+    }
+});
+
+pArrow.addEventListener('mouseout', function(){
+    // console.log('clicked');
+    if(menue.style.display !== 'block'){
+        menue.style.display= 'block';
+        pArrow.style.transform = 'rotate(180deg)';
+       
+    }else {
+        
+            menue.style.display = "none";
+            pArrow.style.transform = 'rotate(0deg)';
+    }
+});
+
+//for onclick Event
+
+pArrow.addEventListener('click', function(){
+    // console.log('clicked');
+    if(menue.style.display !== 'block'){
+        menue.style.display= 'block';
+        pArrow.style.transform = 'rotate(180deg)';
+       
+    }else {
+        menue.style.display= 'none';
+        pArrow.style.transform = 'rotate(0deg)';
+    }
+});
 
 
-document.querySelector(".product-drop").addEventListener("mouseup", function(){
-
-    company.style.display = "none";
-    connect.style.display = "none";
-    product.style.display = "block";
-
-  pArrow.style.transform= "rotateZ(-180deg)";  
-  cArrow.style.transform= "none";  
-  conArrow.style.transform= "none";  
-
-})
-
-document.querySelector(".company-drop").addEventListener("mouseup", function(){
-    company.style.display = "block";
-    connect.style.display = "none";
-    product.style.display = "none";
-
-    cArrow.style.transform= "rotateZ(-180deg)";  
-    pArrow.style.transform= "none";  
-    conArrow.style.transform= "none";  
 
 
-})
+// document.querySelector(".product-drop").addEventListener("mouseup", function(){
 
-document.querySelector(".connect-drop").addEventListener("mouseup", function(){
-    company.style.display = "none";
-    connect.style.display = "block";
-    product.style.display = "none";
+//     company.style.display = "none";
+//     connect.style.display = "none";
+//     product.style.display = "block";
 
-    conArrow.style.transform= "rotateZ(-180deg)"; 
-    pArrow.style.transform= "none";  
-    cArrow.style.transform= "none";  
+//   pArrow.style.transform= "rotateZ(-180deg)";  
+//   cArrow.style.transform= "none";  
+//   conArrow.style.transform= "none";  
+
+// })
+
+// document.querySelector(".company-drop").addEventListener("mouseup", function(){
+//     company.style.display = "block";
+//     connect.style.display = "none";
+//     product.style.display = "none";
+
+//     cArrow.style.transform= "rotateZ(-180deg)";  
+//     pArrow.style.transform= "none";  
+//     conArrow.style.transform= "none";  
+
+
+// })
+
+// document.querySelector(".connect-drop").addEventListener("mouseup", function(){
+//     company.style.display = "none";
+//     connect.style.display = "block";
+//     product.style.display = "none";
+
+//     conArrow.style.transform= "rotateZ(-180deg)"; 
+//     pArrow.style.transform= "none";  
+//     cArrow.style.transform= "none";  
  
     
-})
+// })
 
 // window.addEventListener('mouseup', function(event){
 //     var dropTrigger = document.querySelectorAll('#content-trigger');
