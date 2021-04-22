@@ -500,10 +500,6 @@ order: 2;
         max-height: 58em ;
         overflow-y: visible;
     }
-    .hero{
-        padding-top: 3em;
-        width: 90%;
-    }
     h3{
         font-size: 24px;
     }
@@ -522,7 +518,6 @@ order: 2;
 
 
 .col {
-   width: 95%;
     max-width: 760px;
     justify-content: center;
     text-align: center;
@@ -530,14 +525,28 @@ order: 2;
     margin: 0;
     align-items: center;
 }
-.content {
-    width: 73%;
+.content, .container, .hero p {
+    width: 80%;
+    margin: 0 auto;
 }
+.hero, .signoff{
+    padding-top: 3em;
+    width: 88%;
+    margin: 0 auto;
+}
+.hero p{
+    padding-bottom: 2em;
+}
+.hero button{
+    margin: 0 .3em;
+}
+
 .left{
     flex-direction: column-reverse;
 }
 #col-blue{
     width: 75%;
+    margin-top: 2px;
 }
 
 
@@ -553,7 +562,7 @@ order: 2;
     #col-banner {
         margin-top: 15em;
         border-bottom-left-radius: 65px;
-        padding-bottom: 3em;
+        padding-bottom: 1em;
         height: auto;
     }
     
@@ -569,9 +578,9 @@ order: 2;
 
         .col-right#col-image, .col-left#col-image{
             object-position: center ;
-        
+            margin: 0 auto;
+
         }
-    
         #cropped-img {
             margin-top: -250px;
             padding: 0;
