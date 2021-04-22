@@ -502,6 +502,7 @@ order: 2;
     }
     .hero{
         padding-top: 3em;
+        width: 90%;
     }
     h3{
         font-size: 24px;
